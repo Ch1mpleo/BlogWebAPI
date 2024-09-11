@@ -1,5 +1,5 @@
 ﻿using BlogWeb.Repository.Entities;
-using BlogWeb.Repository.Interfaces.IGenericRepo;
+using BlogWeb.Repository.Interfaces.IGenericRepository;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

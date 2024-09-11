@@ -1,6 +1,6 @@
 ﻿using BlogWeb.Repository.Entities;
 using BlogWeb.Repository.Interfaces.Data;
-using BlogWeb.Repository.Interfaces.IGenericRepo;
+using BlogWeb.Repository.Interfaces.IGenericRepository;
 using BlogWeb.Repository.Repositories.GenericRepo;
 using System;
 using System.Collections.Generic;
