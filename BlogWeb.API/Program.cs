@@ -1,5 +1,7 @@
 using BlogWeb.API;
 using BlogWeb.Repository;
+using BlogWeb.Repository.Interfaces.Data;
+using BlogWeb.Repository.Repositories.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -32,6 +34,9 @@ builder.Services.AddDbContext<BlogDbContext>(options =>
 // Add Identity
 builder.Services.AddAuthorization();
 builder.Services.AddIdentityApiEndpoints<IdentityUser>().AddEntityFrameworkStores<BlogDbContext>();
+
+// AddScoped
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 // Build project
 var app = builder.Build();
